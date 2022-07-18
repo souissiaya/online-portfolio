@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>My online CV</title>
+ <!--CSS Styles -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+   <nav>
+    <h1>AYA SOUISSI</h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experiences" class="nav-link">Experiences</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+      <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+
+    </button>
+   </nav>
+
+   <!-- Hero Section -->
+   <section class="hero" id="about">
+    <img
+      src="./IMG_20220508_220207.jpg"
+      alt="aya-souissi"
+      loading="lazy"
+      class="hero-img"
+   />
+    <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-title">About Me</h2>
+      <p class="bio-text">
+        My name is Aya Souissi and I am a first year engineering 
+        student at the National Institute of Applied Sciences and technology, 
+        specialized in industrial computing and automation.
+      </p>
+    </div>
+   </section>
+
+   <!-- Skills section -->
+   <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="./assets/icons/c++.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="./assets/icons/arduino.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="./assets/icons/icons8-javascript.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="./assets/icons/java-icon-images-6.jpg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="./assets/icons/MATLAB-logo.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="./assets/icons/solidworks.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+          
+        />
+      </div>
+    </div>
+  </section>
+  
+  <!-- Projects section -->
+  <section class="projects" id="experiences">
+    <h2 class="projects-title">Some of my volunteer experiences </h2>
+    <div class="projects-container">
+     <div class="project-container project-card">
+       <h3 class="project-title">Summer Internship </h3>
+       <p class="project-details">
+         During this internship and being part of the technical team, I
+         had the chance to see the steps of repairing pieces and assisted
+         in the maintenance of the different used machines and the
+         followed procedures to resolve any breakdowns.
+       </p>
+       <img class="project-pic"
+       src="amm.jpg" 
+       alt=""
+       loading="lazy"
+       />
+      </div>
+
+      <div class="project-container project-card"> 
+         <h3 class="project-title">Clubs' Activities</h3>
+         <div class="chapters"> 
+           <h4 class="club-title"> IEEE CS Chapter </h4>
+             <h5> DevX - organization manager </h5>
+             <p class="project-details">
+             Took care of the coordination between CS members to host
+             the event on Day D. 
+           </p>
+             <h5> Data Overflow - sponsor team </h5>
+             <h5> IEEEXtreme - organisation team </h5>        
+             <h5> CS Chapter - media team </h5>        
+          </div>
+         <div class="chapters">   
+            <h4 class="club-title"> IEEE Wie Chapter </h4>
+              <h5>  SheSolves - media manager </h5>
+              <p class="project-details">
+               Developed a media plan, wrote and edited all media content
+               on social networks .
+            </p>
+          </div>
+          <div class="chapters"> 
+           <h4 class="club-title"> IEEE Ras Chapter </h4>
+            <h5>  NRW - technical team </h5>        
+            <h5>  RAS Chapter - sponsor team</h5>           
+          </div>
+          <div class="chapters"> 
+            <h4 class="club-title">Aerobotix</h4>
+            <h5>  RoboLympix - technical team </h5>        
+            <h5>  Tunirobots - technical team </h5>  
+          </div>
+     </div>
+    </div>
+
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/mrgjwkrr" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Email me</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="socials">
+      <a href="https://www.instagram.com/souissi.eya/" target="_blank" 
+        ><img
+          src="./assets/icons/icons8-instagram.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.linkedin.com/in/ayasouissi/" target="_blank" 
+      ><img      
+          src="./assets/icons/icons8-linkedin-circled.gif"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <div class="scroll-up"> 
+        <a href="#"
+      ><img
+        src="./assets/icons/icons8-upward-arrow.gif"
+        class="socicon up-arrow"
+        alt="scroll-up"
+    /></a>
+  </body>
+</html>
